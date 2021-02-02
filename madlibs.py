@@ -1,5 +1,5 @@
-#Assignment:
-#Copy your initial program from Programming Practice 1.1 into a new .py file. (Ths was the poem or song that you printed
+# Assignment:
+# Copy your initial program from Programming Practice 1.1 into a new .py file. (Ths was the poem or song that you printed
 # to the screen.) Modify the file to accept input from the user, assign the input to a minimum of 8 variables, and use
 # the variables in the output. You are essentially creating a mad-libs game.
 
@@ -12,9 +12,9 @@ body_Part = input("Name a body part: ")
 family = input("Name of family member: ")
 soda = input("Favorite soft drink: ")
 
-print("Aim at your " + body_Part + ", yeah, take off your " + body_Part +", yeah")
+print("Aim at your " + body_Part + ", yeah, take off your " + body_Part + ", yeah")
 print("I'm swingin' when I'm off the ecstasy (Uh), that's a Molly park, yeah")
-print("Iron on me, hoo-hoo, that's a "+ marvel_hero +", yeah")
+print("Iron on me, hoo-hoo, that's a " + marvel_hero + ", yeah")
 print("Pourin' fours in a " + str(num) + " ounce " + soda + ", yeah")
 print("I'm O.C, three-gram wood full of OG (Huh)")
 print("Give BM dick like Moby (Uh), gun make him " + synonym + ", Adobe (Uh)")
