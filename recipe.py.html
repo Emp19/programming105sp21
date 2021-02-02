@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>recipe.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6897bb;}
+.s3 { color: #6a8759;}
+.s4 { color: #cc7832;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+recipe.py</font>
+</center></td></tr></table>
+<pre><span class="s0"># Assignment:</span>
+<span class="s0"># Find a recipe online, provide a link to the recipe in the comments. Display the ingredients with amounts and list the</span>
+<span class="s0"># servings that will be made with the recipe. Ask the user to enter how many servings they would like to make, and</span>
+<span class="s0"># display the required amount of ingredients they will need. Format to one decimal place</span>
+<span class="s0"># Recipe from https://www.hersheys.com/kitchens/en_us/recipes/hersheys-perfectly-chocolate-chocolate-cake.html</span>
+
+<span class="s1">serving = </span><span class="s2">12</span>
+<span class="s1">sugar = </span><span class="s2">2</span>
+<span class="s1">flour = </span><span class="s2">1.75</span>
+<span class="s1">hershey_cocoa = </span><span class="s2">.75</span>
+<span class="s1">baking_powder = </span><span class="s2">1.5</span>
+<span class="s1">baking_soda = </span><span class="s2">1.5</span>
+<span class="s1">salt = </span><span class="s2">1</span>
+<span class="s1">egg = </span><span class="s2">2</span>
+<span class="s1">milk = </span><span class="s2">1</span>
+<span class="s1">vegetable_oil = </span><span class="s2">.5</span>
+<span class="s1">vanilla_extract = </span><span class="s2">2</span>
+<span class="s1">boiling_water = </span><span class="s2">1</span>
+<span class="s1">print(</span><span class="s3">&quot;This recipe serves 12&quot;</span><span class="s1">)</span>
+<span class="s1">desired_serving = input(</span><span class="s3">&quot;How many servings would you like?&quot;</span><span class="s1">)</span>
+<span class="s1">multiply = int(desired_serving) / serving</span>
+<span class="s1">print(</span><span class="s3">&quot;This recipe requires: &quot;</span><span class="s1">)</span>
+<span class="s1">print(</span><span class="s3">&quot;Sugar: &quot; </span><span class="s1">+ str(format(sugar*multiply</span><span class="s4">, </span><span class="s3">'.1f'</span><span class="s1">)) + </span><span class="s3">&quot; cups&quot;</span><span class="s1">)</span>
+<span class="s1">print(</span><span class="s3">&quot;Flour: &quot; </span><span class="s1">+ str(format(flour*multiply</span><span class="s4">, </span><span class="s3">'.1f'</span><span class="s1">)) + </span><span class="s3">&quot; cups&quot;</span><span class="s1">)</span>
+<span class="s1">print(</span><span class="s3">&quot;Hershey's Cocoa: &quot; </span><span class="s1">+ str(format(hershey_cocoa*multiply</span><span class="s4">, </span><span class="s3">'.1f'</span><span class="s1">)) + </span><span class="s3">&quot; cups&quot;</span><span class="s1">)</span>
+<span class="s1">print(</span><span class="s3">&quot;Baking Powder: &quot; </span><span class="s1">+ str(format(baking_powder*multiply</span><span class="s4">, </span><span class="s3">'.1f'</span><span class="s1">)) + </span><span class="s3">&quot; teaspoons&quot;</span><span class="s1">)</span>
+<span class="s1">print(</span><span class="s3">&quot;Baking Soda: &quot; </span><span class="s1">+ str(format(baking_soda*multiply</span><span class="s4">, </span><span class="s3">'.1f'</span><span class="s1">)) + </span><span class="s3">&quot; teaspoons&quot;</span><span class="s1">)</span>
+<span class="s1">print(</span><span class="s3">&quot;Salt: &quot; </span><span class="s1">+ str(format(salt*multiply</span><span class="s4">, </span><span class="s3">'.1f'</span><span class="s1">)) + </span><span class="s3">&quot; teaspoons&quot;</span><span class="s1">)</span>
+<span class="s1">print(</span><span class="s3">&quot;Eggs: &quot; </span><span class="s1">+ str(int(egg*multiply)))</span>
+<span class="s1">print(</span><span class="s3">&quot;Milk: &quot; </span><span class="s1">+ str(format(milk*multiply</span><span class="s4">, </span><span class="s3">'.1f'</span><span class="s1">)) + </span><span class="s3">&quot; cups&quot;</span><span class="s1">)</span>
+<span class="s1">print(</span><span class="s3">&quot;Vegetable Oil: &quot; </span><span class="s1">+ str(format(vegetable_oil*multiply</span><span class="s4">, </span><span class="s3">'.1f'</span><span class="s1">)) + </span><span class="s3">&quot; cups&quot;</span><span class="s1">)</span>
+<span class="s1">print(</span><span class="s3">&quot;Vanilla Extract: &quot; </span><span class="s1">+ str(format(vanilla_extract*multiply</span><span class="s4">, </span><span class="s3">'.1f'</span><span class="s1">)) + </span><span class="s3">&quot; cups&quot;</span><span class="s1">)</span>
+<span class="s1">print(</span><span class="s3">&quot;Boiling Water: &quot; </span><span class="s1">+ str(format(baking_soda*multiply</span><span class="s4">, </span><span class="s3">'.1f'</span><span class="s1">)) + </span><span class="s3">&quot; cups&quot;</span><span class="s1">)</span>
+</pre>
+</body>
+</html>
