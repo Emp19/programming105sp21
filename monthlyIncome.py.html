@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>monthlyIncome.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #cc7832;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+monthlyIncome.py</font>
+</center></td></tr></table>
+<pre><span class="s0"># Assignment:</span>
+<span class="s0"># Create a program that helps someone create a budget. It should ask the user for monthly income and  the following</span>
+<span class="s0"># expenses:</span>
+<span class="s0"># Housing</span>
+<span class="s0"># Food</span>
+<span class="s0"># Transportation</span>
+<span class="s0"># Phone</span>
+<span class="s0"># Utilities</span>
+<span class="s0"># Clothing</span>
+<span class="s0"># The program should get input from the user and convert each of the inputs to floats.</span>
+<span class="s0"># The program should tell the user how much money they have left after it subtracts the budgeted items from the income.</span>
+<span class="s0"># The program should calculate and display the income percentage of each budget item.</span>
+
+<span class="s1">monthly_income = float(input(</span><span class="s2">&quot;How much money do you earn per month on average?&quot;</span><span class="s1">))</span>
+<span class="s1">housing = float(input(</span><span class="s2">&quot;How much do you do you pay for housing?&quot;</span><span class="s1">))</span>
+<span class="s1">food = float(input(</span><span class="s2">&quot;How much do you spend on food?&quot;</span><span class="s1">))</span>
+<span class="s1">transportation = float(input(</span><span class="s2">&quot;How much do you spend on gas, car services and transportation?&quot;</span><span class="s1">))</span>
+<span class="s1">phone = float(input(</span><span class="s2">&quot;How much do you spend on your phone bill?&quot;</span><span class="s1">))</span>
+<span class="s1">utilities = float(input(</span><span class="s2">&quot;How much do you spend on utilities?&quot;</span><span class="s1">))</span>
+<span class="s1">clothing = float(input(</span><span class="s2">&quot;How much do you spend on clothing?&quot;</span><span class="s1">))</span>
+
+<span class="s1">print(</span><span class="s2">&quot;Your monthly income is $&quot; </span><span class="s1">+ str(format(monthly_income</span><span class="s3">, </span><span class="s2">'.2f'</span><span class="s1">)))</span>
+<span class="s1">print(</span><span class="s2">&quot;You spend &quot; </span><span class="s1">+ str(format(housing/monthly_income</span><span class="s3">, </span><span class="s2">'.2%'</span><span class="s1">)) + </span><span class="s2">&quot;on housing&quot;</span><span class="s1">)</span>
+<span class="s1">print(</span><span class="s2">&quot;You spend &quot; </span><span class="s1">+ str(format(food/monthly_income</span><span class="s3">, </span><span class="s2">'.2%'</span><span class="s1">)) + </span><span class="s2">&quot;on food&quot;</span><span class="s1">)</span>
+<span class="s1">print(</span><span class="s2">&quot;You spend &quot; </span><span class="s1">+ str(format(transportation/monthly_income</span><span class="s3">, </span><span class="s2">'.2%'</span><span class="s1">)) + </span><span class="s2">&quot;on transportation&quot;</span><span class="s1">)</span>
+<span class="s1">print(</span><span class="s2">&quot;You spend &quot; </span><span class="s1">+ str(format(phone/monthly_income</span><span class="s3">, </span><span class="s2">'.2%'</span><span class="s1">)) + </span><span class="s2">&quot;on your phone bill&quot;</span><span class="s1">)</span>
+<span class="s1">print(</span><span class="s2">&quot;You spend &quot; </span><span class="s1">+ str(format(utilities/monthly_income</span><span class="s3">, </span><span class="s2">'.2%'</span><span class="s1">)) + </span><span class="s2">&quot;on utilities&quot;</span><span class="s1">)</span>
+<span class="s1">print(</span><span class="s2">&quot;You spend &quot; </span><span class="s1">+ str(format(clothing/monthly_income</span><span class="s3">, </span><span class="s2">'.2%'</span><span class="s1">)) + </span><span class="s2">&quot;on clothing&quot;</span><span class="s1">)</span>
+<span class="s1">print(</span><span class="s2">&quot;You are left with &quot; </span><span class="s1">+ str(monthly_income-housing-food-transportation-phone-utilities-clothing) + </span><span class="s2">&quot; to spend&quot;</span><span class="s1">)</span>
+</pre>
+</body>
+</html>
